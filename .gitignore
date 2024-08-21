@@ -1,9 +1,10 @@
+# Arquivos de sistema e ferramentas do Dart
 .DS_Store
 .dart_tool/
-
 .packages
 .pub/
 
+# Arquivos e diretórios gerados
 build/
 ios/.generated/
 ios/Flutter/Generated.xcconfig

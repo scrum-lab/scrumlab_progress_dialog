@@ -1,0 +1,3 @@
+# Excluir arquivos específicos de documentação ao publicar o pacote
+docs/example.html
+docs/index.html

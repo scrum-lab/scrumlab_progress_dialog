@@ -68,7 +68,7 @@ class MyApp extends StatelessWidget {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:progress_dialog/progress_dialog.dart';
+import 'package:scrumlab_progress_dialog/scrumlab_progress_dialog.dart';
 
 ProgressDialog pr;
 
@@ -163,7 +163,7 @@ class MyApp extends StatelessWidget {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:progress_dialog/progress_dialog.dart';
+import 'package:scrumlab_progress_dialog/scrumlab_progress_dialog.dart';
 
 ProgressDialog pr;
 
@@ -227,5 +227,5 @@ class _SecondScreenState extends State<SecondScreen> {
 
 ## Demo
 
-<img src="https://raw.githubusercontent.com/fayaz07/progress_dialog/master/demo.gif" width="324" height="576" alt="Normal Progress" />  <img src="https://raw.githubusercontent.com/fayaz07/progress_dialog/master/demo_1.gif" width="324" height="576" alt="Download Progress" />
+<img src="https://raw.githubusercontent.com/scrum-lab/scrumlab_progress_dialog/master/demo.gif" width="324" height="576" alt="Normal Progress" />  <img src="https://raw.githubusercontent.com/scrum-lab/scrumlab_progress_dialog/master/demo_1.gif" width="324" height="576" alt="Download Progress" />
 

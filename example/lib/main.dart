@@ -2,9 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:scrumlab_progress_dialog/scrumlab_progress_dialog.dart';
 
-//import '../../lib/progress_dialog.dart';
-
-ProgressDialog pr;
+late ProgressDialog pr;
 
 void main() {
   runApp(MaterialApp(
@@ -17,24 +15,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-//    pr = new ProgressDialog(context,
-//        type: ProgressDialogType.Normal, isDismissible: false);
-//    pr = new ProgressDialog(context, type: ProgressDialogType.Download);
-
-// Custom body test
     pr = ProgressDialog(
       context,
       type: ProgressDialogType.Download,
       textDirection: TextDirection.rtl,
       isDismissible: true,
-//      customBody: LinearProgressIndicator(
-//        valueColor: AlwaysStoppedAnimation<Color>(Colors.blueAccent),
-//        backgroundColor: Colors.white,
-//      ),
     );
 
     pr.style(
-//      message: 'Downloading file...',
       message:
           'Lets dump some huge text into the progress dialog and check whether it can handle the huge text. If it works then not you or me, flutter is awesome',
       borderRadius: 10.0,
@@ -52,12 +40,14 @@ class MyApp extends StatelessWidget {
 
     return Scaffold(
       body: Center(
-        child: RaisedButton(
+        child: ElevatedButton(
             child: Text(
               'Show Dialog',
               style: TextStyle(color: Colors.white),
             ),
-            color: Colors.blue,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blue,
+            ),
             onPressed: () async {
               await pr.show();
 
@@ -104,10 +94,11 @@ class MyApp extends StatelessWidget {
 
               Future.delayed(Duration(seconds: 10)).then((onValue) {
                 print("PR status  ${pr.isShowing()}");
-                if (pr.isShowing())
+                if (pr.isShowing()) {
                   pr.hide().then((isHidden) {
                     print(isHidden);
                   });
+                }
                 print("PR status  ${pr.isShowing()}");
               });
             }),
@@ -122,19 +113,21 @@ class FirstScreen extends StatefulWidget {
 }
 
 class _FirstScreenState extends State<FirstScreen> {
-  ProgressDialog pr;
+  late ProgressDialog pr;
 
   @override
   Widget build(BuildContext context) {
-    pr = new ProgressDialog(context, showLogs: true);
+    pr = ProgressDialog(context, showLogs: true);
     pr.style(message: 'Please wait...');
 
     return Scaffold(
       body: Center(
-        child: RaisedButton(
+        child: ElevatedButton(
           child: Text('Show dialog and go to next screen',
               style: TextStyle(color: Colors.white)),
-          color: Colors.blueAccent,
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blueAccent,
+          ),
           onPressed: () {
             pr.show();
             Future.delayed(Duration(seconds: 3)).then((value) {

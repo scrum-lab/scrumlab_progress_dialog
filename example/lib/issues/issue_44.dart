@@ -1,6 +1,6 @@
 //import 'package:flutter/cupertino.dart';
 //import 'package:flutter/material.dart';
-//import 'package:progress_dialog/progress_dialog.dart';
+//import 'package:scrumlab_progress_dialog/scrumlab_progress_dialog.dart';
 //
 //void main() => runApp(MaterialApp(home: IndexPage()));
 //

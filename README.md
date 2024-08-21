@@ -2,7 +2,7 @@
 
 A light weight package to show progress dialog. As it is a stateful widget, you can change the text shown on the dialog dynamically.
 
-> Thank you for being a user of this package, this package is discontinued due to serveral reasons, please find the other library which you can use to accomplish the task which this package does and I believe that package will be more helpful. Please find the repo link here for [OTS (Over the screen)](https://github.com/fayaz07/ots) 
+> Thank you for being a user of this package, this package is discontinued due to serveral reasons, please find the other library which you can use to accomplish the task which this package does and I believe that package will be more helpful. Please find the repo link here for [OTS (Over the screen)](https://github.com/scrum-lab/ots) 
 
 [![Fork](https://img.shields.io/github/forks/scrum-lab/scrumlab_progress_dialog?style=social)](https://github.com/scrum-lab/scrumlab_progress_dialog/fork) &nbsp; [![Star](https://img.shields.io/github/stars/scrum-lab/scrumlab_progress_dialog?style=social)](https://github.com/scrum-lab/scrumlab_progress_dialog/star) &nbsp; [![Watches](https://img.shields.io/github/watchers/scrum-lab/scrumlab_progress_dialog?style=social)](https://github.com/scrum-lab/scrumlab_progress_dialog/) 
 
