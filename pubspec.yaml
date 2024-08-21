@@ -1,0 +1,22 @@
+name: scrumlab_progress_dialog
+description: A light weight library to easily manage a progress dialog with simple steps whenever you need to do it. You can easily show and hide it.
+version: 2.0.0
+#author: Giuliano Jordao<giulianojordao@gmail.com>
+homepage: https://github.com/scrum-lab/scrumlab_progress_dialog
+
+environment:
+  sdk: ">=2.12.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  progress_dialog: any
+flutter:
+  assets:
+   - assets/double_ring_loading_io.gif
+
